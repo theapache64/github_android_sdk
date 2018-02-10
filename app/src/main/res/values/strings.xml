@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GitHub Android SDK Example</string>
+    <string name="action_settings">Settings</string>
+    <string name="Create_Issue">Create Issue</string>
+    <string name="title_activity_create_issue">Create Issue Example</string>
+    <string name="Authorization">Authorization</string>
+    <string name="Owner">Owner</string>
+    <string name="Repo">Repo</string>
+    <string name="Title">Title</string>
+    <string name="Body">Body</string>
+    <string name="Error">Error</string>
+    <string name="OK">OK</string>
+    <string name="Creating_issue">Creating issue…</string>
+    <string name="Success">Success</string>
+    <string name="Issue_created">Issue created</string>
+    <string name="Network_error">Network error occurred</string>
+    <string name="Create_Comment">Create Comment</string>
+    <string name="title_activity_create_comment">Create Comment Example</string>
+    <string name="Issue_Number">Issue Number</string>
+    <string name="Creating_comment">Creating comment...</string>
+    <string name="Comment_created">Comment created</string>
+</resources>
