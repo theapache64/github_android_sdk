@@ -17,8 +17,8 @@ An android SDK for github (beta)
 
 ```java
 GitHubAPI.createIssue(
-    "userName",
-    "repoName",
+    "repoOwnerName", // eg: theapache64
+    "repoName", // eg: github_android_sdk
     "Issue's Title",
     "bodyGoesHere",
     new GitHubAPI.Callback<CreateIssueResponse>() {
@@ -38,7 +38,7 @@ GitHubAPI.createIssue(
 
 ```java
 GitHubAPI.listIssues(
-    "userName", 
+    "repoOwnerName", 
     "repoName", 
     "Issue's Title",
     new GitHubAPI.Callback<List<ListIssuesResponse.Issue>>() {
@@ -55,6 +55,26 @@ GitHubAPI.listIssues(
 
 ```
 
+### Create Comment
+
+```java
+GitHubAPI.createComment(
+    "repoOwnerName",
+    "repoName", 
+    1234, // issue number 
+    "your comments goes here",
+    new GitHubAPI.Callback<CreateCommentResponse>() {
+        @Override
+        public void onSuccess(CreateCommentResponse createCommentResponse) {
+            System.out.println("Added comment");
+        }
+
+        @Override
+        public void onError(Throwable t) {
+            // Mostly network errors
+        }
+    });
+```
 
 the rest is self explanatory.
 
